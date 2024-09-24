@@ -1,0 +1,128 @@
+#footer{
+  background: #fafafa;
+  padding: 30px 16px 30px;
+  color: #555;
+  line-height: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+  .logo-area{
+    img{
+      display: block;
+      width: 90px;
+      height: 25px;
+      margin-bottom: 10px;
+    }
+    .desc{
+      font-size: 14px;
+    }
+  }
+  .customer-area{
+    margin: 20px 0;
+    .tit{
+      font-size: 13px;
+      line-height: 16px;
+      font-weight: 500;
+    }
+    .tel{
+      display: block;
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: 700;
+      padding-bottom: 8px;
+    }
+    .desc{
+      font-size: 13px;
+      line-height: 16px;
+      font-weight: 400;
+    }
+  }
+  .sns-area{
+    ul{
+      display: flex;
+      gap: 25px;
+    }
+    .facebook{
+      width: 12px;
+      height: 22px;
+    }
+    .youtube,
+    .insta{
+      width: 22px;
+      height: 22px;
+    }
+  }
+  .corp-area{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px 0 12px;
+    li{
+      position: relative;
+      font-size: 12px;
+      line-height: 1.7;
+      color: #777;
+      padding: 4px 0;
+      margin-right: 16px;
+      font-weight: 700;
+      &:not(:last-child)::after{
+        content:'';
+        position: absolute;
+        top: 50%;
+        right: -8px;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 10px;
+        background: #ccc;
+      }
+    }
+  }
+  .addr-area{
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #777;
+    .line{
+      position: relative;
+      margin-left: 14px;
+      &::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 10px;
+        background: #ccc;
+      }
+    }
+  }
+  .copy{
+    display: block;
+    margin: 30px 0;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.02em;
+    color: #777;
+    font-weight: 700;
+    span{
+      font-weight: 400;
+    }
+  }
+  .mark-area{
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    justify-content: flex-start;
+    .ftc{
+      width: 45px;
+      height: 34px;
+    }
+    .symantic{
+      width: 36px;
+      height: 38px;
+    }
+    .kg{
+      width: 27px;
+      height: 31px;
+    }
+  }
+}
+

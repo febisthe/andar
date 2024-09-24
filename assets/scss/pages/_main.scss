@@ -1,0 +1,391 @@
+// [섹션1] 비주얼
+.sc-visual{
+  .swiper{
+    position: relative;
+    img{
+      width: 100%;
+    }
+  }
+
+  .txt-area{
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding: 72px 27px;
+    .tit{
+      font-family: 'NotoSansKR', sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 1.3;
+      letter-spacing: -1.5px;
+      color: #fff;
+    }
+    .desc{
+      font-weight: 400;
+      padding-top: 15px;
+      font-size: 17px;
+      line-height: 1.4;
+      letter-spacing: -0.5px;
+      color: #fff;
+    }
+  }
+
+  .pagination{
+    position: absolute;
+    bottom: 37px;
+    z-index: 1;
+    width: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    .swiper-pagination-bullet{
+      margin: 0;
+      background: #fff;
+      border-radius: 0;
+      width: 20px;
+      height: 2px;
+    }
+  }
+}
+
+// [섹션2] 브랜드 이슈
+.sc-issue{
+  img{
+    width: 100%;
+  }
+
+  .txt-area{
+    background-color: rgb(109, 133, 140);
+    padding: 32px 24px 44px;
+    color: #fff;
+    font-family: 'NotoSansKR', sans-serif;
+    .tit{
+      font-size: 22px;
+      line-height: 1.3;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+    .desc{
+      font-size: 13px;
+      line-height: 1.6;
+      letter-spacing: -0.02em;
+      margin-bottom: 28px;
+      font-weight: 400;
+    }
+    .rec-product{
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 1.3;
+      border-bottom: 1px solid #fff;
+      display: inline-block;
+    }
+  }
+}
+
+// [섹션3] 베스트 상품 - 탭메뉴 
+.sc-best{
+  .list-tab{
+    display: flex;
+    padding: 0 16px;
+    margin-bottom: 22px;
+    gap: 10px;
+    .tab-item{
+      font-size: 15px;
+      padding: 9px 10px;
+      font-weight: 500;
+      color: #77797e;
+      &.on{
+        font-weight: 700;
+        background: #B75622;
+        color: #fff;
+        border-radius: 60px;
+      }
+    }
+  }
+  .type1{
+    &.on{
+      display: none;
+    }
+  }
+  .text{
+    padding: 15px 5% 0;
+    margin-bottom: 40px;
+  }
+  .btn-more{
+    margin: 0 16px 60px;
+    text-align: center;
+    button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 16px 0;
+      border: 1px solid #C8CBD2;
+      border-radius: 4px;
+      width: 100%;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+      margin-top: 30px;
+      color: #C86733;
+      margin-right: 5px;
+      &::after{
+        content: url('../images/ico_best-arrow.png');
+      }
+    }
+  }
+}
+
+// [섹션4] 스토리
+.sc-story{
+  padding: 36px 20px;
+  background-color: #C86733;
+  color: #fff;
+  margin-bottom: 10px;
+  .tit{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+  }
+  .desc{
+    padding: 10px 0 5px;
+    font-family: 'NotoSansKR', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+  }
+  .detail{
+    width: 100px;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-family: 'NotoSansKR', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+    line-height: 1.3;
+    letter-spacing: -0.03em;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+  }
+}
+
+// [어사이드] 쿠폰배너
+.aside-coupon{
+  position: relative;
+  text-align: right;
+  padding-bottom: 30px;
+  .pagination{
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    bottom: auto;
+    left: auto;
+    color: rgba(255, 255, 255, 0.90);
+    width: auto;
+    padding: 2px 6px;
+    background-color: rgba(28, 28, 28, 0.70);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    z-index: 2;
+  }
+}
+
+// [섹션5] 룩북
+.sc-lookbook{
+  .content{
+    margin-top: 40px;
+    .img-area{
+      img{width: 100%;}
+    }
+    .txt-area{
+      padding: 20px 16px;
+      .tit{
+        font-family: 'NotoSansKR', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 35px;
+        letter-spacing: -0.05em;
+      }
+      .desc{
+        font-family: 'NotoSansKR', sans-serif;
+        font-weight: 400;
+        padding: 14px 0 28px;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.05em;
+      }
+      .move{
+        display: inline-block;
+        background-color: #1e1e1e;
+        border-radius: 2px;
+        border: 1px solid #1e1e1e;
+        color: #fff;
+        padding: 8px 47px 8px 18px;
+        font-size: 14px;
+        line-height: 20px;
+        font-family: 'NotoSansKR', sans-serif;
+        font-weight: 500;
+        background-image: url('../images/ico_move-arrow.png');
+        background-repeat: no-repeat;
+        background-size: 15px auto;
+        background-position: calc(100% - 18px) center;
+      }
+    }
+  }
+}
+
+// [섹션6] 추천 아이템
+.sc-recommend{
+  padding: 0 16px;
+  .headline-m{
+    padding-top: 50px;
+    margin-bottom: 20px;
+  }
+  .swiper{
+    height: 170vw;
+  }
+  .pagination{
+    z-index: 4;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .swiper-pagination-bullet{
+      width: 30px;
+      height: 2px;
+      border-radius: 0;
+      background: #000;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+// [섹션7] 이달의 신상
+.sc-newitem{
+  .text{
+    padding: 15px 5% 0;
+    margin-bottom: 40px;
+  }
+  .btn-more{
+    margin: 0 16px 60px;
+    text-align: center;
+    button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 16px 0;
+      border: 1px solid #C8CBD2;
+      border-radius: 4px;
+      width: 100%;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+      margin-top: 30px;
+      color: #C86733;
+      margin-right: 5px;
+      &::after{
+        content: url('../images/ico_best-arrow.png');
+      }
+    }
+  }
+}
+
+// [섹션8] 카테고리(레깅스, 브라탑, 세트)
+.sc-category{
+  padding-left: 20px;
+  .swiper-slide{
+    position: relative;
+  }
+  .content{
+    position: relative;
+    .headline-m{
+      font-size: 20px;
+      font-weight: 600;
+      padding: 30px 0;
+      margin: 0;
+    }
+    .link-more{
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      position: absolute;
+      top: 35px;
+      right: 10px;
+      &::after{
+        display: block;
+        width: 8px;
+        height: 8px;
+        margin: 0 auto;
+        background: url(../images/ico_more-arrow.png) no-repeat center / 100% auto;
+        content: '';
+      }
+    }
+  }
+  .link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+// [섹션9] [섹션10] 멤버십 스토어
+.group-banner{
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .sc-membership{
+    background-image: url('../images/bg_membership.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .sc-store{
+    background-image: url('../images/bg_store.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .bn{
+    padding: 65px 20px;
+    color: #fff;
+    .tit{
+      font-size: 26px;
+      line-height: 31px;
+      font-family: 'NotoSansKR', sans-serif;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .desc{
+      font-size: 15px;
+      line-height: 1.4;
+      font-family: 'NotoSansKR', sans-serif;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      padding: 15px 0 30px;
+    }
+    .detail{
+      margin-top: 30px;
+      border: 1px solid #fff;
+      padding: 10px 25px;
+      font-size: 12px;
+      font-family: 'NotoSansKR', sans-serif;
+      font-weight: 600;
+      letter-spacing: -0.025em
+    }
+  }
+}
+
+
+
+
+
