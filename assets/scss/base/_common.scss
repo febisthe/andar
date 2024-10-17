@@ -1,41 +1,41 @@
-.blind{
+.blind {
   position: absolute;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-	clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
 }
 
-.hidden{
+.hidden {
   overflow: hidden;
 }
 
-.dimmed{
+.dimmed {
   position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 11;
-    background: rgba(0, 0, 0, 0.65);
-    transition: all 0.4s ease;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 11;
+  background: rgba(0, 0, 0, 0.65);
+  transition: all 0.4s ease;
 }
 
-.dimmed.on{
+.dimmed.on {
   opacity: 1;
   visibility: visible;
 }
 
-.scroll{
+.scroll {
   height: 100%;
   overflow: hidden;
 }
 
-.check{
+.check {
   position: relative;
-  &::after{
+  &::after {
     display: block;
     position: absolute;
     top: 2px;
@@ -44,11 +44,11 @@
     height: 6px;
     border-radius: 50%;
     background: #ee5728;
-    content: "";
+    content: '';
   }
 }
 
-.headline{
+.headline {
   padding: 50px 16px 22px;
   font-size: 28px;
   font-family: 'NotoSansKR', sans-serif;
@@ -56,32 +56,32 @@
   line-height: 1;
   letter-spacing: -0.02em;
   color: #212326;
-  &-m{
+  &-m {
     font-family: 'NotoSansKR', sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 29px;
     letter-spacing: -0.05em;
   }
-  &-sm{
+  &-sm {
     margin: 0 auto 10px;
     font-size: 15px;
     font-family: 'NotoSansKR', sans-serif;
     font-weight: 400;
     letter-spacing: -0.03em;
     line-height: 1.4;
-  };
+  }
 }
 
-.product-normal{
-  &.type1{
+.product-normal {
+  &.type1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    li{
+    li {
       position: relative;
     }
-    .link{
+    .link {
       position: absolute;
       top: 0;
       left: 0;
@@ -89,21 +89,21 @@
       bottom: 0;
     }
   }
-  &.type2{
+  &.type2 {
     padding: 0 16px;
-    li{
+    li {
       position: relative;
       display: flex;
       padding: 20px 0;
       gap: 28px;
-      .thumb{
+      .thumb {
         width: 110px;
       }
-      &+li{
+      & + li {
         border-top: 1px solid #eee;
       }
     }
-    .link{
+    .link {
       position: absolute;
       top: 0;
       left: 0;
@@ -111,13 +111,13 @@
       bottom: 0;
     }
   }
-  .thumb{
+  .thumb {
     position: relative;
-    .prd-img{
+    .prd-img {
       width: 100%;
     }
   }
-  .review{
+  .review {
     position: relative;
     font-size: 13px;
     font-weight: 600;
@@ -126,40 +126,40 @@
     margin-top: 6px;
     z-index: 2;
   }
-  .tit{
+  .tit {
     padding: 10px 0;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: -0.05em;
     line-height: 17px;
   }
-  .price{
+  .price {
     font-size: 15px;
     line-height: 16px;
-    .percent{
+    .percent {
       margin-right: 5px;
       font-size: 15px;
       color: #8e1f29;
       font-weight: 600;
     }
-    .current{
+    .current {
       font-weight: 500;
       letter-spacing: -0.03em;
       margin-right: 5px;
     }
-    .ori{
+    .ori {
       font-size: 13px;
       line-height: 18px;
       font-weight: 400;
       color: #8d8d8d;
     }
   }
-  .hashtag{
+  .hashtag {
     display: flex;
     flex-wrap: wrap;
     margin-top: 10px;
     gap: 5px;
-    .name{
+    .name {
       font-size: 12px;
       color: #8e1f28;
       border: 1px solid rgba(142, 31, 41, 0.5);
@@ -167,16 +167,16 @@
       line-height: 1;
       opacity: 1;
     }
-    .name2{
+    .name2 {
       font-size: 12px;
       color: #fff;
-      background: #439AE9;
+      background: #439ae9;
       padding: 5px 6px 4px 6px;
       line-height: 1;
       opacity: 1;
     }
   }
-  .rank{
+  .rank {
     position: absolute;
     top: 0;
     left: 0;
@@ -189,7 +189,7 @@
     font-weight: 500;
     text-align: center;
   }
-  .icons{
+  .icons {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -197,13 +197,13 @@
     top: 0;
     right: 0;
     width: 16%;
-    img{
+    img {
       width: 100%;
     }
   }
 }
 
-#quick{
+#quick {
   position: fixed;
   right: 10px;
   bottom: 50px;
@@ -215,11 +215,11 @@
   opacity: 0;
   visibility: hidden;
   transition: 0.1s;
-  &.show{
+  &.show {
     opacity: 1;
     visibility: visible;
   }
-  .chat{
+  .chat {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -229,12 +229,12 @@
     color: #595959;
     border-bottom: 1px solid #e9e9e9;
     padding-bottom: 4px;
-    img{
+    img {
       padding: 5px;
       margin-bottom: 4px;
     }
   }
-  .btn-top{
+  .btn-top {
     padding: 10px;
   }
 }
