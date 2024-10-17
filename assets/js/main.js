@@ -78,6 +78,7 @@ fetch('./assets/data/visual.json')
   .then((response) => response.json())
   .then((json) => {
     const visualData = json.visualData;
+    console.log(visualData);
 
     let html = '';
     visualData.forEach((el) => {
@@ -130,6 +131,7 @@ fetch('./assets/data/leg.json')
   .then((response) => response.json())
   .then((json) => {
     const legData = json.legData;
+    console.log(legData);
 
     let html = '';
 
